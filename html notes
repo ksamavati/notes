@@ -1,0 +1,27 @@
+<em>Italic</em>
+<strong>Bold</strong>
+<u>Underlined</u>
+<s>strikethrough</s>
+
+<hr>
+<!--  Horizontal line -->
+
+<div class="class1 class2"></div>
+<!-- Classes let you apply a set of CSS properties to one or more specific HTML elements that have that class tag. You can set multiple classes seperated by a spacebar. -->
+
+
+<!-- HTML5 Semantic tags-->
+<header></header>
+<!-- On every page, has title, navigation, etc -->
+<nav></nav>
+<!-- Encompasses navigation elements -->
+<main></main>
+<!-- Encompasses all content unique to this page, does not include common elements like navigation. -->
+<section></section>
+<!-- Specific section of a page, can have several per page. -->
+<article></article>
+<!-- Defines some kind of article like a blog post. -->
+<aside></aside>
+<!-- related but not part of an article or section -->
+<footer></footer>
+<!-- Footer, might have contact info, legal/TOS, links, etc -->

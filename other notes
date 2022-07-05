@@ -1,0 +1,2 @@
+Block-level items start on a new line (h1-h6, p, div, etc)
+inline items sit within surrounding content (img, span, etc)

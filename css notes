@@ -1,0 +1,67 @@
+/* # denotes an ID, . denotes a class, -- denotes variable, no modifier applies to element type (e.g. h1) */
+
+div ul {
+    /* Multiple elements: this will only apply to ul elements nested inside of div tags */
+    list-style-type: none;
+    /* removes the ul bullet */
+    list-style-image: image("https://www.google.com/logos/doodles/2022/fourth-of-july-2022-6753651837109457.2-ladc.gif");
+    /* replaces the bullet with an image */
+}
+
+
+/* a:hover changes styling of links while mouse is hovered over them */
+
+--variable {
+    box-shadow: offset-x, offset-y, blur-radius, spread-radius, color;
+    /* creates shadow */
+    opacity: 0;
+    /* becomes translucent as opacity approaches 0 */
+    text-transform: uppercase;
+    /* Change the case of text */
+    font-size: 68px;
+    /* change size of text, can use px or pt units */
+    font-weight: 400;
+    /* change thickness of text, values go from approx 200-800 */
+    text-decoration: none;
+    /* add or remove underline/strikethrough - useful for removing underline from anchor links */
+    position: relative;
+    left: 10px;
+    /* allows you to move an element relative to its normal position on the page, left, right, top, bottom properties will move in opposite direction */
+    position: absolute;
+    animation-timing-function: linear;
+    /*  */
+    @media (max-width: 400px) {
+        /* Insert CSS rules that apply when the screen size is <400px */
+    }
+}
+
+
+/* FLEXBOX */
+
+--flexbox {
+    display: flex;
+    /* MUST include this to apply flex properties */
+    flex-direction: column;
+    /* decides whether the flex is vertical or horizontal (row/column) or reversed (row-reverse/column-reverse), can also be inherited from parent element's flex property (inherit)*/
+    flex: 1 0 200px;
+    /* Shorthand for: [flex-grow] [flex-shrink] [flex-basis] */
+    flex-shrink: 0;
+    /* Default:1 - Set to 0 to disable shrinking which is enabled by default. Decides the relative rate at which objects shrink if the page width is not enough to accommodate the item */
+    flex-grow: 1;
+    /* Default:0 - If not zero, will grow to fill available space up to max-width (if defined). If multiple elements have different flex-grow values, they determine relative growth rate. */
+    flex-basis: 200px;
+    /* same as min-width (if flex direction is row), but will still shrink below this if there's not enough screen space when all elements are at min; with min-width you'll have to scroll page to see entire element  */
+    justify-content: center;
+    /* decides how all flexbox content aligns on main axis: center, flex-start, flex-end, space-evenly, etc */
+    align-items: center;
+    /* decides how all flexbox content aligns on cross axis (opposite axis of flexbox) */
+    transition: flex-basis 1s ease-out;
+    /* Shorthand for: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]*/
+    /* If the element set to transition-property changes, applies a transition animation */
+    /* Can use "all" as transition property, will apply transition to any and all properties that change */
+    tra
+}
+
+@media screen and (min-width:768px) {
+    /* anything inside this tag only applies when the screen width is 768px or higher */
+}
